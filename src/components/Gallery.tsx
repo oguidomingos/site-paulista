@@ -2,45 +2,47 @@ import { useState } from 'react'
 import { X } from 'lucide-react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
+const base = import.meta.env.BASE_URL
+
 const photos = [
   {
-    src: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80',
-    alt: 'Carne assada na brasa',
+    src: `${base}photos/buffet-closeup.jpg`,
+    alt: 'Buffet self-service com panelas de barro',
     span: 'col-span-2 row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80',
-    alt: 'Salada fresca do buffet',
+    src: `${base}photos/facade.jpg`,
+    alt: 'Fachada do Restaurante do Paulista',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80',
-    alt: 'Prato preparado com carinho',
+    src: `${base}photos/plate-spaghetti.jpg`,
+    alt: 'Prato montado com espaguete e carne de sol',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80',
-    alt: 'Ambiente interno do restaurante',
+    src: `${base}photos/interior-main.jpg`,
+    alt: 'Salao principal do restaurante',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80',
-    alt: 'Comida caseira brasileira',
+    src: `${base}photos/buffet-wide.jpg`,
+    alt: 'Vista ampla do buffet com cozinha ao fundo',
     span: 'col-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
-    alt: 'Mesa servida para o almoco',
+    src: `${base}photos/exterior.jpg`,
+    alt: 'Area externa com mesas e piso xadrez',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80',
-    alt: 'Carne de sol especial',
+    src: `${base}photos/plate-meat.jpg`,
+    alt: 'Prato com carne grossa, pure e arroz',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80',
-    alt: 'Prato do dia',
+    src: `${base}photos/team.jpg`,
+    alt: 'Equipe sorrindo no balcao com churrasqueira',
     span: '',
   },
 ]
@@ -108,7 +110,7 @@ export default function Gallery() {
             <X size={32} />
           </button>
           <img
-            src={lightbox.replace('w=600', 'w=1200').replace('w=800', 'w=1200')}
+            src={lightbox}
             alt="Foto ampliada"
             className="max-w-full max-h-[90vh] rounded-lg object-contain"
             style={{ animation: 'scaleIn 0.3s ease-out both' }}

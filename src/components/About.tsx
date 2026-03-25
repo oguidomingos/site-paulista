@@ -59,16 +59,16 @@ export default function About() {
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
-                  alt="Prato de comida caseira"
+                  src={`${import.meta.env.BASE_URL}photos/buffet-closeup.jpg`}
+                  alt="Buffet do Restaurante do Paulista"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden aspect-square">
                 <img
-                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
-                  alt="Ambiente do restaurante"
+                  src={`${import.meta.env.BASE_URL}photos/interior-main.jpg`}
+                  alt="Interior do Restaurante do Paulista"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
@@ -77,16 +77,16 @@ export default function About() {
             <div className="space-y-4 pt-8">
               <div className="rounded-2xl overflow-hidden aspect-square">
                 <img
-                  src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"
-                  alt="Carne assada"
+                  src={`${import.meta.env.BASE_URL}photos/plate-meat.jpg`}
+                  alt="Prato com carne de sol do Restaurante do Paulista"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
-                  alt="Interior do restaurante"
+                  src={`${import.meta.env.BASE_URL}photos/team.jpg`}
+                  alt="Equipe do Restaurante do Paulista"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
